@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeFlow Derventa - IT Usluge i Dizajn</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1c1e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #483d8b, #6a5acd);
+            padding: 100px 0;
+            text-align: center;
+            color: #000;
+            animation: gradientShift 5s ease infinite alternate;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background: linear-gradient(135deg, #483d8b, #6a5acd);
+            }
+            50% {
+                background: linear-gradient(135deg, #6a5acd, #483d8b);
+            }
+            100% {
+                background: linear-gradient(135deg, #483d8b, #6a5acd);
+            }
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #000;
+            margin: 0 0 10px 0;
+        }
+
+        header p {
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            background-color: #483d8b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta:hover {
+            background-color: #6a5acd;
+        }
+
+        /* SERVICES SECTION - centrirano i simetrično */
+        .container.services {
+            max-width: 1000px;
+            margin: 50px auto 30px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .service {
+            flex: 0 0 30%;
+            max-width: 320px;
+            background-color: #2c2c2e;
+            padding: 25px 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+            color: #e0e0e0;
+            font-weight: 500;
+            margin: 0;
+
+            /* Ispravke za prelamanje teksta */
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            background-color: #6a5acd;
+            color: #fff;
+        }
+
+        .about-me,
+        .tips {
+            background-color: #2c2c2e;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-me h2,
+        .tips h2 {
+            color: #6a5acd;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .about-me p,
+        .tips ul {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .tips ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .tips ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1c1c1e;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            background-color: #2c2c2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p,
+        footer a {
+            color: #6a5acd;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container.services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                max-width: 90%;
+                flex: 1 1 auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CodeFlow Derventa</h1>
+            <p>IT podrška, dizajn i digitalna rešenja na jednom mestu.</p>
+            <a href="#contact" class="cta">Kontaktiraj me</a>
+        </div>
+    </header>
+
+    <section class="container services">
+        <div class="service">
+            <h3>Web Dizajn i Grafika</h3>
+            <p>Logotipi,Vizit kartice,web stranice(html/css-jednostavni portfolio,prodajni katalog),highlight ikone za instagram,promo materijali(Letci,brosure)</p>
+        </div>
+        <div class="service">
+            <h3>Tehnicka Podrska</h3>
+            <p>Ruteri(podesavanje,resetovanje,sigurnona zastita),USB/CD narezivanje(muzika,softveri,fajlovi),WiFi kamere(povezivanje,konfiguracija,podesavanja)</p>
+        </div>
+        <div class="service">
+            <h3>Vođenje profila</h3>
+            <p>Kreiranje sadrzaja(Postovi,storiji,reels),uredjivanje feeda,dizajn ikonica,analiza profila,strategija objava(planiranje sadrzaja,postavljanjerasporeda objava),osnove marketinga</p>
+        </div>
+    </section>
+
+    <section class="container about-me">
+        <h2>O meni</h2>
+        <p>
+            Ja sam Jovan, IT tehnicar, digitalni kreativac i tvoj budući najbolji saradnik kada je u pitanju tehnologija i dizajn. Već više od dve godine ronim kroz svet kodova, piksela i klijenata sa kojima zajedno gradim mostove između ideja i stvarnosti. Možda nisam superheroj, ali kad treba da spasim dan kvalitetnim web stranicama, upečatljivim logotipima ili vizit karticama koje ostavljaju utisak — tu sam, na licu mesta.
+
+Volim da pravim stvari koje funkcionišu bez greške, ali i da unesu malo umetnosti u svaki projekat. Nisam tip koji voli da gleda samo u ekrane i broji linije koda — volim da razumem priču iza svakog projekta, da čujem tvoje ideje, i zajedno sa tobom da ih pretvorim u nešto stvarno, korisno i lepo za oko.
+
+Verujem da svaki uspešan projekat nastaje u opuštenoj atmosferi i dobrom razgovoru. Zato, ako želiš partnera za svoj digitalni uspeh, javi se — zajedno možemo napraviti čuda.
+        </p>
+    </section>
+
+    <section class="container tips">
+        <h2>5 besplatnih korisnih savjeta</h2>
+        <ul>
+            <li>Uvijek koristite Comic Sans za ozbiljne poslovne prezentacije.</li>
+            <li>Više fontova znači bolji dizajn.</li>
+            <li>Isključite svoj telefon tokom važnih sastanaka za "više kreativnosti".</li>
+            <li>Dodajte animacije na svaki element web stranice.</li>
+            <li>Kombinuj fine boje.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Kontaktiraj me</h2>
+        <div class="footer-content">
+            <p>Email: <a href="mailto:lazicjoco360@gmail.com">lazicjoco360@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/codeflow.derventa">@codeflow.derventa</a></p>
+            <p>WhatsApp/Viber: <a href="tel:+38765761270">+387 65/761-270</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 CodeFlow Derventa | Sva prava zadržana.</p>
+            <p><a href="#">Privatnost</a> | <a href="#">Uslovi korišćenja</a></p>
+        </div>
+    </footer>
+</body>
+</html>
